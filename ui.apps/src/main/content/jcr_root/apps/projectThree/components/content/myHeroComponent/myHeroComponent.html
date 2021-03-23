@@ -1,0 +1,28 @@
+<style>
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  left:20px;
+
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+
+ <div class="container">
+<div style="width:600px; height: 600px;" data-sly-resource="${'image' @ resourceType = '/libs/wcm/foundation/components/image'}"> 
+
+  </div>
+  <div class="text-block">
+    <h4><sly data-sly-resource="${'text' @ resourceType = '/apps/core/wcm/components/text/v2/text'}"></sly></h4>
+
+  </div>
+</div> 
+<!-- <img class="hero-image"><sly data-sly-resource="${'image' @ resourceType = '/libs/wcm/foundation/components/image'}"></sly></img> -->

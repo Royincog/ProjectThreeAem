@@ -1,0 +1,19 @@
+This is my custom Property
+<sly data-sly-use.myTitle = "projectThree.core.models.TitleModel"></sly>
+<h1>${myTitle.getTitle}</h1>
+<sly data-sly-use.helloService = "projectThree.core.models.CustomServiceModel"></sly>
+
+<sly data-sly-use.developerName = "projectThree.core.models.DeveloperInfoAdapter"></sly>
+<h1>${helloService.getMessage}</h1>
+<h1>${developerName.getDeveloperName}</h1>
+
+<sly data-sly-use.myExcel = "projectThree.core.models.ExcelModel"></sly>
+<sly data-sly-list.id = "${myExcel.getId}" data-sly-unwrap> 
+<sly data-sly-list.name = "${myExcel.getName}" data-sly-unwrap> 
+
+<ul>
+<li>${name},${id}</li> 
+
+</ul>
+
+
